@@ -2,6 +2,7 @@
 const is = require("./is")
 const extend = require("./extend")
 const originalPage = Page
+const config = require('./config')
 
 const EVNET_LIST = [
   "onLoad",
@@ -37,7 +38,7 @@ class WPage {
 
     for (let item in needs) {
       let props = needs[item] || {}
-      let component = new Component(require(`../components/${item}/index`))
+      let component = new Component(require(`${config.componentPath}/${item}/index`))
 
       component.name || component.setName(item)
 
