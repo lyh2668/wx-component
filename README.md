@@ -2,6 +2,8 @@ wx-component
 ========
 
 一种微信小程序组件化解决方案
+本组件的原作者：binning
+由于在使用的过程中发现一些小问题，发现作者似乎不再维护该项目了，所以fork过来进行了一些修改，之后发现问题也会继续跟进。
 
 ### 使用
 
@@ -32,7 +34,9 @@ App({
 
 ```
 ├─project                小程序前端
-  ├─components           业务功能组件
+  ├─libs
+    ├─wx-component       该libs引入的位置
+  ├─components           业务功能组件
     ├─login              登录组件
       ├─index.wxss
       ├─index.wxml
